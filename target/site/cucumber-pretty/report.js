@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 2,
   "name": "Login",
-  "description": "As a user I want to login website sauce demo\n\n// test case login",
+  "description": "  As a user I want to login website sauce demo",
   "id": "login",
   "keyword": "Feature",
   "tags": [
@@ -13,401 +13,14 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 8980610708,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 7,
-  "name": "Normal Login",
-  "description": "",
-  "id": "login;normal-login",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 8,
-  "name": "User open the website souce demo",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "User input \"standard_user\" as userName and input \"secret_sauce\" as pass",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User already on landing page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.verifyLogin()"
-});
-formatter.result({
-  "duration": 383216875,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "standard_user",
-      "offset": 12
-    },
-    {
-      "val": "secret_sauce",
-      "offset": 50
-    }
-  ],
-  "location": "LoginSteps.inputCredential(String,String)"
-});
-formatter.result({
-  "duration": 3168878709,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.verifyLandingPage()"
-});
-formatter.result({
-  "duration": 3190085875,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 147564208,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 12,
-  "name": "Invalid Login",
-  "description": "",
-  "id": "login;invalid-login",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 13,
-  "name": "User open the website souce demo",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User input \"\u003cuserName\u003e\" as userName and input \"\u003cpassword\u003e\" as pass",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User see error \"\u003cerrorText\u003e\" on login page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 16,
-  "name": "",
-  "description": "",
-  "id": "login;invalid-login;",
-  "rows": [
-    {
-      "cells": [
-        "userName",
-        "password",
-        "errorText"
-      ],
-      "line": 17,
-      "id": "login;invalid-login;;1"
-    },
-    {
-      "cells": [
-        "standard_user",
-        "",
-        "Epic sadface: Password is required"
-      ],
-      "line": 18,
-      "id": "login;invalid-login;;2"
-    },
-    {
-      "cells": [
-        "",
-        "secret_sauce",
-        "Epic sadface: Username is required"
-      ],
-      "line": 19,
-      "id": "login;invalid-login;;3"
-    },
-    {
-      "cells": [
-        "123salah",
-        "salah juga123",
-        "Epic sadface: Username and password do not match any user in this service"
-      ],
-      "line": 20,
-      "id": "login;invalid-login;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 5829750958,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 18,
-  "name": "Invalid Login",
-  "description": "",
-  "id": "login;invalid-login;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Login"
-    }
-  ]
-});
-formatter.step({
-  "line": 13,
-  "name": "User open the website souce demo",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User input \"standard_user\" as userName and input \"\" as pass",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User see error \"Epic sadface: Password is required\" on login page",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.verifyLogin()"
-});
-formatter.result({
-  "duration": 184114791,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "standard_user",
-      "offset": 12
-    },
-    {
-      "val": "",
-      "offset": 50
-    }
-  ],
-  "location": "LoginSteps.inputCredential(String,String)"
-});
-formatter.result({
-  "duration": 986797541,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Epic sadface: Password is required",
-      "offset": 16
-    }
-  ],
-  "location": "LoginSteps.verifyErrorText(String)"
-});
-formatter.result({
-  "duration": 50595125,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 129406708,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5814848333,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 19,
-  "name": "Invalid Login",
-  "description": "",
-  "id": "login;invalid-login;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Login"
-    }
-  ]
-});
-formatter.step({
-  "line": 13,
-  "name": "User open the website souce demo",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User input \"\" as userName and input \"secret_sauce\" as pass",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User see error \"Epic sadface: Username is required\" on login page",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.verifyLogin()"
-});
-formatter.result({
-  "duration": 212795667,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 12
-    },
-    {
-      "val": "secret_sauce",
-      "offset": 37
-    }
-  ],
-  "location": "LoginSteps.inputCredential(String,String)"
-});
-formatter.result({
-  "duration": 917383958,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Epic sadface: Username is required",
-      "offset": 16
-    }
-  ],
-  "location": "LoginSteps.verifyErrorText(String)"
-});
-formatter.result({
-  "duration": 41049417,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 111198875,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5770374083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Invalid Login",
-  "description": "",
-  "id": "login;invalid-login;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Login"
-    }
-  ]
-});
-formatter.step({
-  "line": 13,
-  "name": "User open the website souce demo",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User input \"123salah\" as userName and input \"salah juga123\" as pass",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User see error \"Epic sadface: Username and password do not match any user in this service\" on login page",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.verifyLogin()"
-});
-formatter.result({
-  "duration": 238410542,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "123salah",
-      "offset": 12
-    },
-    {
-      "val": "salah juga123",
-      "offset": 45
-    }
-  ],
-  "location": "LoginSteps.inputCredential(String,String)"
-});
-formatter.result({
-  "duration": 1876323625,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Epic sadface: Username and password do not match any user in this service",
-      "offset": 16
-    }
-  ],
-  "location": "LoginSteps.verifyErrorText(String)"
-});
-formatter.result({
-  "duration": 41741250,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 108364750,
-  "status": "passed"
-});
-formatter.uri("features/sales.feature");
-formatter.feature({
-  "line": 2,
-  "name": "Sales flow",
-  "description": "description CLass",
-  "id": "sales-flow",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@sales"
-    }
-  ]
-});
-formatter.before({
-  "duration": 5642467875,
+  "duration": 1978772708,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
-  "name": "User make a purchase with 2 item",
+  "name": "Normal Login",
   "description": "",
-  "id": "sales-flow;user-make-a-purchase-with-2-item",
+  "id": "login;normal-login",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -426,77 +39,13 @@ formatter.step({
   "name": "User already on landing page",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 9,
-  "name": "User sort product list by \"Name (Z to A)\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User choice 2 product from the list",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "User Click Product add to cart",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "User Click remove product to cart",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "User Click Check Out product",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "User input \"viski\" as firstNameCheckOut and input \"arditia\" as lastNameCheckOut and input \"16620\" as portalCode",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User Click continue confirm to payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "Page Display where item price is same with item total",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "Page Display the item total price after tax is same with total purchase",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "User Click Finish for Order Done",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "THANK YOU FOR YOUR ORDER",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "User Click Burger Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "User Click Button Log Out",
-  "keyword": "And "
-});
 formatter.match({
   "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 211360333,
-  "status": "passed"
+  "duration": 42666917,
+  "error_message": "java.lang.ExceptionInInitializerError\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\tat ✽.Given User open the website souce demo(features/login.feature:6)\nCaused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @30b8a058\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:172)\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -512,129 +61,324 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 3169883750,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PurchaseStep.verifyLandingPage()"
 });
 formatter.result({
-  "duration": 3180418708,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 117033667,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
+formatter.scenarioOutline({
+  "line": 10,
+  "name": "Invalid Login",
+  "description": "",
+  "id": "login;invalid-login",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 11,
+  "name": "User open the website souce demo",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "User input \"\u003cuserName\u003e\" as userName and input \"\u003cpassword\u003e\" as pass",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "User see error \"\u003cerrorText\u003e\" on login page",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 14,
+  "name": "",
+  "description": "",
+  "id": "login;invalid-login;",
+  "rows": [
     {
-      "val": "Name (Z to A)",
-      "offset": 27
+      "cells": [
+        "userName",
+        "password",
+        "errorText"
+      ],
+      "line": 15,
+      "id": "login;invalid-login;;1"
+    },
+    {
+      "cells": [
+        "standard_user",
+        "",
+        "Epic sadface: Password is required"
+      ],
+      "line": 16,
+      "id": "login;invalid-login;;2"
+    },
+    {
+      "cells": [
+        "",
+        "secret_sauce",
+        "Epic sadface: Username is required"
+      ],
+      "line": 17,
+      "id": "login;invalid-login;;3"
+    },
+    {
+      "cells": [
+        "123salah",
+        "salah juga123",
+        "Epic sadface: Username and password do not match any user in this service"
+      ],
+      "line": 18,
+      "id": "login;invalid-login;;4"
     }
   ],
-  "location": "PurchaseStep.sortProductValue(String)"
+  "keyword": "Examples"
 });
-formatter.result({
-  "duration": 3200346459,
+formatter.before({
+  "duration": 1129061333,
   "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "Invalid Login",
+  "description": "",
+  "id": "login;invalid-login;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "User open the website souce demo",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "User input \"standard_user\" as userName and input \"\" as pass",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "User see error \"Epic sadface: Password is required\" on login page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "PurchaseStep.choiceProduct()"
+  "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 3307895791,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.clickcart()"
-});
-formatter.result({
-  "duration": 3185054625,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.clickremove()"
-});
-formatter.result({
-  "duration": 3102245791,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.clickCheckOut()"
-});
-formatter.result({
-  "duration": 3091528792,
-  "status": "passed"
+  "duration": 2040542,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\tat ✽.Given User open the website souce demo(features/login.feature:11)\nCaused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @30b8a058 [in thread \"main\"]\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:172)\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "viski",
+      "val": "standard_user",
       "offset": 12
     },
     {
-      "val": "arditia",
-      "offset": 51
-    },
-    {
-      "val": "16620",
-      "offset": 91
+      "val": "",
+      "offset": 50
     }
   ],
-  "location": "PurchaseStep.inputCheckOut(String,String,String)"
+  "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 4026227042,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "PurchaseStep.continueConfirm()"
+  "arguments": [
+    {
+      "val": "Epic sadface: Password is required",
+      "offset": 16
+    }
+  ],
+  "location": "LoginSteps.verifyErrorText(String)"
 });
 formatter.result({
-  "duration": 3119325583,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.verifyPrice()"
-});
-formatter.result({
-  "duration": 73371041,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.verifyTotal()"
-});
-formatter.result({
-  "duration": 3057292041,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.buttonFinishOrder()"
-});
-formatter.result({
-  "duration": 3113460750,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.headerFinish()"
-});
-formatter.result({
-  "duration": 3052350958,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.burgerButton()"
-});
-formatter.result({
-  "duration": 3175688583,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseStep.buttonLogOut()"
-});
-formatter.result({
-  "duration": 3110551083,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 112331708,
+  "duration": 107558042,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 994981917,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Invalid Login",
+  "description": "",
+  "id": "login;invalid-login;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "User open the website souce demo",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "User input \"\" as userName and input \"secret_sauce\" as pass",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "User see error \"Epic sadface: Username is required\" on login page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.verifyLogin()"
+});
+formatter.result({
+  "duration": 389667,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\tat ✽.Given User open the website souce demo(features/login.feature:11)\nCaused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @30b8a058 [in thread \"main\"]\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:172)\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 12
+    },
+    {
+      "val": "secret_sauce",
+      "offset": 37
+    }
+  ],
+  "location": "LoginSteps.inputCredential(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Username is required",
+      "offset": 16
+    }
+  ],
+  "location": "LoginSteps.verifyErrorText(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 116864625,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1162891167,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Invalid Login",
+  "description": "",
+  "id": "login;invalid-login;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "User open the website souce demo",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "User input \"123salah\" as userName and input \"salah juga123\" as pass",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "User see error \"Epic sadface: Username and password do not match any user in this service\" on login page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.verifyLogin()"
+});
+formatter.result({
+  "duration": 807333,
+  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\tat ✽.Given User open the website souce demo(features/login.feature:11)\nCaused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @30b8a058 [in thread \"main\"]\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:172)\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "123salah",
+      "offset": 12
+    },
+    {
+      "val": "salah juga123",
+      "offset": 45
+    }
+  ],
+  "location": "LoginSteps.inputCredential(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Username and password do not match any user in this service",
+      "offset": 16
+    }
+  ],
+  "location": "LoginSteps.verifyErrorText(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 119272084,
   "status": "passed"
 });
 });

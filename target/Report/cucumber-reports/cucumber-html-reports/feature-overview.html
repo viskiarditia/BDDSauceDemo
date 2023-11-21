@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                28,
                 0,
-                0,
+                4,
+                8,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 28) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                5,
-                0
+                0,
+                4
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   2,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>04 Feb 2023, 18:08</td>
+                        <td>21 Nov 2023, 14:22</td>
           </tr>
         </tbody>
       </table>
@@ -325,63 +325,48 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="features-login-feature.html">Login</a></td>
         
-        <td  class="passed"    >4</td>
         <td >0</td>
+        <td  class="failed"    >4</td>
         <td class="total">4</td>
-        <td      class="passed"    >12</td>
         <td >0</td>
-        <td >0</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >8</td>
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
-        <td class="duration" data-value="11291393375">11s 291ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="features-sales-feature.html">Sales flow</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >16</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-        <td class="duration" data-value="45177001330">45s 177ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="45904459">045ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>2</td>
-            <td>5</td>
+      <td>1</td>
+            <td>0</td>
+      <td>4</td>
+      <td>4</td>
       <td>0</td>
-      <td>5</td>
-      <td>28</td>
+      <td>4</td>
+      <td>8</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>28</td>
-      <td class="duration">56s 468ms</td>
+      <td>12</td>
+      <td class="duration">045ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
+      <td></td>
       <td>0.00%</td>
+      <td>33.33%</td>
+      <td>66.67%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td></td>
       <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
