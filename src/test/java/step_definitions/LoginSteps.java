@@ -18,24 +18,29 @@ public class LoginSteps {
     }
 
     @When("User input \"(.*)\" as userName and input \"(.*)\" as pass")
-    public void inputCredential(String userName, String pass){
+    public void inputCredential(String userName, String pass) throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         loginPage.setUserName(userName);
         loginPage.setPassword(pass);
+        Thread.sleep(5000);
         loginPage.clickLogin();
+        Thread.sleep(5000);
     }
 
     @Given("User open the website souce demo")
-    public void verifyLogin(){
+    public void verifyLogin() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
+        Thread.sleep(5000);
     }
 
 
     @Then("User see error \"(.*)\" on login page")
-    public void verifyErrorText(String errorText){
+    public void verifyErrorText(String errorText) throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         assertEquals(errorText, loginPage.verifyErrorText());
+        Thread.sleep(5000);
+
     }
 
 
